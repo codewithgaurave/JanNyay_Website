@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 
 export default function Gallery() {
   const [activeCategory, setActiveCategory] = useState('all');
+  const [selectedItem, setSelectedItem] = useState(null);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -296,13 +297,16 @@ export default function Gallery() {
                   }}>
                     {item.desc}
                   </p>
-                  <div style={{
+                  <div 
+                    onClick={() => setSelectedItem(item)}
+                    style={{
                     display: 'flex',
                     alignItems: 'center',
                     gap: '6px',
                     color: item.color,
                     fontWeight: '700',
                     fontSize: '0.85rem',
+                    cursor: 'pointer',
                   }}>
                     Read Full Case Study
                     <span style={{ fontSize: '1rem' }}>→</span>
@@ -410,6 +414,188 @@ export default function Gallery() {
           </div>
         </div>
       </section>
+
+      {/* Modal */}
+      {selectedItem && (
+        <div 
+          onClick={() => setSelectedItem(null)}
+          style={{
+            position: 'fixed',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            background: 'rgba(0,0,0,0.8)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            zIndex: 9999,
+            padding: '20px',
+          }}>
+          <div 
+            onClick={(e) => e.stopPropagation()}
+            style={{
+              background: '#fff',
+              borderRadius: '24px',
+              maxWidth: '900px',
+              width: '100%',
+              maxHeight: '90vh',
+              overflow: 'auto',
+              position: 'relative',
+            }}>
+            {/* Close Button */}
+            <button
+              onClick={() => setSelectedItem(null)}
+              style={{
+                position: 'absolute',
+                top: '20px',
+                right: '20px',
+                width: '40px',
+                height: '40px',
+                borderRadius: '50%',
+                border: 'none',
+                background: 'rgba(0,0,0,0.5)',
+                color: '#fff',
+                fontSize: '1.5rem',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                zIndex: 10,
+              }}
+              onMouseEnter={e => e.currentTarget.style.background = 'rgba(0,0,0,0.8)'}
+              onMouseLeave={e => e.currentTarget.style.background = 'rgba(0,0,0,0.5)'}
+            >
+              ×
+            </button>
+
+            {/* Modal Image */}
+            <div style={{ height: '400px', overflow: 'hidden', borderRadius: '24px 24px 0 0' }}>
+              <img
+                src={selectedItem.img}
+                alt={selectedItem.title}
+                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+              />
+            </div>
+
+            {/* Modal Content */}
+            <div style={{ padding: '40px' }}>
+              <div style={{
+                display: 'inline-block',
+                padding: '6px 16px',
+                borderRadius: '20px',
+                background: `${selectedItem.color}15`,
+                color: selectedItem.color,
+                fontSize: '0.8rem',
+                fontWeight: '700',
+                textTransform: 'uppercase',
+                letterSpacing: '0.5px',
+                marginBottom: '16px',
+              }}>
+                {categories.find(c => c.id === selectedItem.category)?.name || 'Gallery'}
+              </div>
+              
+              <h2 style={{
+                fontSize: '2rem',
+                fontWeight: '900',
+                color: '#0f172a',
+                marginBottom: '16px',
+                lineHeight: 1.3,
+                fontFamily: "'Georgia', serif",
+              }}>
+                {selectedItem.title}
+              </h2>
+              
+              <p style={{
+                fontSize: '1.1rem',
+                color: '#475569',
+                lineHeight: 1.8,
+                marginBottom: '24px',
+              }}>
+                {selectedItem.desc}
+              </p>
+
+              {/* Additional Details */}
+              <div style={{
+                background: '#f8fafc',
+                padding: '24px',
+                borderRadius: '16px',
+                marginBottom: '24px',
+              }}>
+                <h3 style={{ fontSize: '1.2rem', fontWeight: '800', color: '#0f172a', marginBottom: '16px' }}>
+                  Case Details
+                </h3>
+                <div style={{ display: 'grid', gap: '12px' }}>
+                  {[
+                    { label: 'Court', value: 'Supreme Court of India' },
+                    { label: 'Year', value: '2024' },
+                    { label: 'Duration', value: '18 months' },
+                    { label: 'Outcome', value: 'Favorable Judgment' },
+                  ].map(detail => (
+                    <div key={detail.label} style={{ display: 'flex', justifyContent: 'space-between', padding: '8px 0', borderBottom: '1px solid #e2e8f0' }}>
+                      <span style={{ fontWeight: '600', color: '#64748b' }}>{detail.label}:</span>
+                      <span style={{ fontWeight: '700', color: '#0f172a' }}>{detail.value}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* CTA Buttons */}
+              <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+                <Link to="/contact" style={{
+                  flex: 1,
+                  minWidth: '200px',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '8px',
+                  padding: '14px 24px',
+                  borderRadius: '12px',
+                  textDecoration: 'none',
+                  background: `linear-gradient(135deg, ${selectedItem.color}, ${selectedItem.color}dd)`,
+                  color: '#fff',
+                  fontWeight: '700',
+                  fontSize: '1rem',
+                  transition: 'transform 0.2s',
+                }}
+                  onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-2px)'}
+                  onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}
+                >
+                  ⚖️ Get Free Consultation
+                </Link>
+                <a href="tel:+911800000000" style={{
+                  flex: 1,
+                  minWidth: '200px',
+                  display: 'inline-flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  gap: '8px',
+                  padding: '14px 24px',
+                  borderRadius: '12px',
+                  textDecoration: 'none',
+                  background: '#f8fafc',
+                  border: '2px solid #e2e8f0',
+                  color: '#0f172a',
+                  fontWeight: '700',
+                  fontSize: '1rem',
+                  transition: 'all 0.2s',
+                }}
+                  onMouseEnter={e => {
+                    e.currentTarget.style.borderColor = selectedItem.color;
+                    e.currentTarget.style.transform = 'translateY(-2px)';
+                  }}
+                  onMouseLeave={e => {
+                    e.currentTarget.style.borderColor = '#e2e8f0';
+                    e.currentTarget.style.transform = 'translateY(0)';
+                  }}
+                >
+                  📞 Call Now
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       <Footer />
 
