@@ -2,9 +2,9 @@ import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
-    <footer style={{ 
-      background: 'linear-gradient(180deg, #0f172a 0%, #1e1b4b 100%)', 
-      padding: '80px 24px 30px', 
+    <footer style={{
+      background: 'linear-gradient(180deg, #0f172a 0%, #1e1b4b 100%)',
+      padding: '80px 24px 30px',
       color: '#94a3b8',
       position: 'relative',
       overflow: 'hidden',
@@ -24,7 +24,7 @@ export default function Footer() {
       }} />
 
       <div style={{ maxWidth: '1280px', margin: '0 auto', position: 'relative', zIndex: 1 }}>
-        
+
         {/* Top Section - Brand + Newsletter */}
         <div style={{
           display: 'grid',
@@ -37,7 +37,7 @@ export default function Footer() {
           {/* Brand Section */}
           <div>
             <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: '20px' }}>
-              <img src="/WhatsApp_Image_2026-03-09_at_22.59.49-removebg-preview.png" alt="JanNyay" 
+              <img src="/WhatsApp_Image_2026-03-09_at_22.59.49-removebg-preview.png" alt="JanNyay"
                 style={{ width: '48px', height: '48px', objectFit: 'contain' }} />
               <span style={{
                 fontSize: '1.8rem', fontWeight: '900', fontFamily: "'Georgia',serif",
@@ -48,7 +48,7 @@ export default function Footer() {
             <p style={{ fontSize: '1rem', lineHeight: 1.8, color: '#cbd5e1', marginBottom: '24px', maxWidth: '500px' }}>
               India's most trusted legal services platform. Empowering citizens with accessible, affordable, and expert legal representation across all courts since 2010.
             </p>
-            
+
             {/* Trust Badges */}
             <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', marginBottom: '24px' }}>
               {[
@@ -277,8 +277,8 @@ export default function Footer() {
           <div>
             <h4 style={{ color: '#e2e8f0', fontWeight: '800', marginBottom: '20px', fontSize: '1.05rem' }}>Contact Us</h4>
             {[
-              { icon: '📞', text: '1800-000-0000', subtext: 'Toll Free' },
-              { icon: '📧', text: 'help@jannyay.in', subtext: 'Email Support' },
+              { icon: '📞', text: '8400984678', subtext: 'Toll Free' },
+              { icon: '📧', text: 'jannyay.office@gmail.com', subtext: 'Email Support' },
               { icon: '📍', text: 'New Delhi', subtext: 'India' },
               { icon: '⏰', text: 'Mon - Sat', subtext: '9 AM - 8 PM' },
             ].map(item => (
@@ -343,33 +343,36 @@ export default function Footer() {
         }
         @media (max-width: 768px) {
           .footer-top { grid-template-columns: 1fr !important; gap: 40px !important; }
-          .footer-links { grid-template-columns: 1fr !important; gap: 32px !important; text-align: center !important; }
-          .footer-links a, .footer-links > div > div { justify-content: center !important; }
+          .footer-links { grid-template-columns: 1fr !important; gap: 32px !important; }
           .footer-bottom { flex-direction: column !important; text-align: center !important; }
         }
         @media (max-width: 600px) {
-          footer { padding: 50px 20px 24px !important; }
-          .footer-top { gap: 32px !important; padding-bottom: 40px !important; text-align: center !important; }
-          .footer-top > div:first-child { display: flex !important; flex-direction: column !important; align-items: center !important; }
-          .footer-top > div:first-child > div:first-child { justify-content: center !important; }
+          footer { padding: 50px 16px 24px !important; }
+          .footer-top { gap: 32px !important; padding-bottom: 40px !important; }
+          .footer-top > div:first-child { display: flex !important; flex-direction: column !important; align-items: center !important; text-align: center !important; }
           .footer-top > div:first-child > p { text-align: center !important; }
-          .footer-top > div:first-child > div:nth-child(3) { justify-content: center !important; }
-          .footer-top > div:first-child > div:last-child { justify-content: center !important; }
-          .footer-top > div:last-child { text-align: center !important; }
-          .footer-links { gap: 28px !important; text-align: center !important; }
-          .footer-links a { justify-content: center !important; }
-          .footer-links > div > div { justify-content: center !important; }
+          .footer-top > div:first-child > div { justify-content: center !important; }
+          .footer-top > div:last-child { padding: 24px 20px !important; }
+          .footer-links { gap: 28px !important; }
           .footer-bottom { gap: 16px !important; }
           .footer-bottom > div:last-child { flex-direction: column !important; gap: 12px !important; }
         }
         @media (max-width: 480px) {
-          footer { padding: 40px 16px 20px !important; }
+          footer { padding: 40px 12px 20px !important; }
           .footer-top { gap: 28px !important; padding-bottom: 32px !important; }
-          .footer-top input { font-size: 0.85rem !important; padding: 10px 14px !important; }
-          .footer-top button { padding: 10px 20px !important; font-size: 0.85rem !important; }
+          .footer-top > div:first-child img { width: 40px !important; height: 40px !important; }
+          .footer-top > div:first-child > div:first-child span { font-size: 1.5rem !important; }
+          .footer-top > div:first-child > p { font-size: 0.9rem !important; }
+          .footer-top > div:first-child > div:nth-child(3) > div { padding: 5px 12px !important; font-size: 0.75rem !important; }
+          .footer-top > div:last-child { padding: 20px 16px !important; }
+          .footer-top > div:last-child h4 { font-size: 1.1rem !important; }
+          .footer-top > div:last-child p { font-size: 0.85rem !important; }
+          .footer-top > div:last-child > div { flex-direction: column !important; }
+          .footer-top input { width: 100% !important; font-size: 0.85rem !important; padding: 10px 14px !important; }
+          .footer-top button { width: 100% !important; padding: 10px 20px !important; font-size: 0.85rem !important; }
           .footer-links { gap: 24px !important; }
           .footer-links h4 { font-size: 1rem !important; margin-bottom: 16px !important; }
-          .footer-links a, .footer-links div { font-size: 0.85rem !important; margin-bottom: 10px !important; }
+          .footer-links a, .footer-links > div > div { font-size: 0.85rem !important; margin-bottom: 10px !important; }
           .footer-bottom { font-size: 0.75rem !important; padding-top: 24px !important; }
           .footer-bottom > div:last-child div { font-size: 0.7rem !important; }
         }

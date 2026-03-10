@@ -87,8 +87,8 @@ export default function Privacy() {
             <span style={{ fontSize: '2.5rem', display: 'block', marginBottom: '20px' }}>🔒</span>
             <h2 style={{ fontSize: '1.8rem', fontWeight: '800', color: '#111827', marginBottom: '20px' }}>Our Commitment to You</h2>
             <p style={{ fontSize: '1.05rem', color: '#374151', lineHeight: 1.8, margin: 0 }}>
-              At <strong>JanNyay</strong>, we understand that legal matters are deeply personal and confidential. 
-              As India's trusted legal services platform connecting citizens with expert lawyers and courts, 
+              At <strong>JanNyay</strong>, we understand that legal matters are deeply personal and confidential.
+              As India's trusted legal services platform connecting citizens with expert lawyers and courts,
               we are committed to protecting your privacy with the highest standards of data security and confidentiality.
             </p>
           </div>
@@ -100,120 +100,120 @@ export default function Privacy() {
             gap: '32px',
             marginBottom: '60px',
           }} className="privacy-grid">
-          {[
-            {
-              icon: '📋',
-              title: '1. Information We Collect',
-              content: [
-                { heading: 'Personal Information', text: 'Name, phone number, email address, postal address, and identification documents (Aadhaar, PAN) when you register or consult with our lawyers.' },
-                { heading: 'Legal Case Information', text: 'Details about your legal matters, case documents, court proceedings, and communication with advocates to provide effective legal representation.' },
-                { heading: 'Payment Information', text: 'Billing details and transaction records for legal services rendered by our network of lawyers.' },
-                { heading: 'Technical Data', text: 'IP address, browser type, device information, and usage patterns to improve our platform and ensure security.' },
-              ]
-            },
-            {
-              icon: '⚖️',
-              title: '2. How We Use Your Information',
-              content: [
-                { heading: 'Legal Services Delivery', text: 'To connect you with qualified lawyers, facilitate consultations, and provide legal representation in courts across India.' },
-                { heading: 'Case Management', text: 'To manage your legal cases, prepare documents, file petitions, and represent you in Supreme Court, High Courts, District Courts, and Tribunals.' },
-                { heading: 'Communication', text: 'To send case updates, court hearing dates, legal notices, and important information related to your matters.' },
-                { heading: 'Service Improvement', text: 'To analyze usage patterns and improve our legal services platform for better client experience.' },
-              ]
-            },
-            {
-              icon: '🛡️',
-              title: '3. Attorney-Client Privilege',
-              content: [
-                { heading: 'Confidentiality Protection', text: 'All communications between you and our lawyers are protected under Section 126 of the Indian Evidence Act, 1872, ensuring attorney-client privilege.' },
-                { heading: 'Professional Ethics', text: 'Our lawyers are bound by the Bar Council of India Rules and professional ethics to maintain strict confidentiality of client information.' },
-                { heading: 'Court Proceedings', text: 'Information shared during legal consultations and case preparation remains confidential unless required to be disclosed in court proceedings.' },
-              ]
-            },
-            {
-              icon: '🔐',
-              title: '4. Data Security Measures',
-              content: [
-                { heading: 'Encryption', text: 'All sensitive data is encrypted using industry-standard SSL/TLS protocols during transmission and AES-256 encryption at rest.' },
-                { heading: 'Access Control', text: 'Only authorized lawyers and staff handling your case have access to your information on a need-to-know basis.' },
-                { heading: 'Secure Storage', text: 'Legal documents and case files are stored in secure, ISO-certified data centers with regular security audits.' },
-                { heading: 'Regular Monitoring', text: 'Continuous monitoring for unauthorized access attempts and security threats to protect your data.' },
-              ]
-            },
-            {
-              icon: '👥',
-              title: '5. Information Sharing',
-              content: [
-                { heading: 'With Your Lawyer', text: 'Your information is shared with the assigned advocate(s) handling your case to provide effective legal representation.' },
-                { heading: 'Court Submissions', text: 'Necessary information is submitted to courts, tribunals, and legal authorities as required for your case proceedings.' },
-                { heading: 'Legal Compliance', text: 'We may disclose information when required by law, court orders, or government authorities under Indian legal framework.' },
-                { heading: 'No Third-Party Marketing', text: 'We never sell, rent, or share your personal information with third parties for marketing purposes.' },
-              ]
-            },
-            {
-              icon: '📱',
-              title: '6. Your Rights',
-              content: [
-                { heading: 'Access & Correction', text: 'You have the right to access, review, and correct your personal information stored in our system.' },
-                { heading: 'Data Portability', text: 'Request a copy of your case documents and personal data in a structured, commonly used format.' },
-                { heading: 'Deletion Request', text: 'Request deletion of your data after case closure, subject to legal record-keeping requirements.' },
-                { heading: 'Opt-Out', text: 'Unsubscribe from promotional communications while continuing to receive essential case-related updates.' },
-              ]
-            },
-            {
-              icon: '⏱️',
-              title: '7. Data Retention',
-              content: [
-                { heading: 'Active Cases', text: 'Information is retained throughout the duration of your legal case and representation.' },
-                { heading: 'Closed Cases', text: 'Case files are maintained for 7 years after case closure as per Bar Council guidelines and legal requirements.' },
-                { heading: 'Financial Records', text: 'Payment and billing information is retained as per Indian tax and accounting regulations.' },
-              ]
-            },
-            {
-              icon: '🍪',
-              title: '8. Cookies & Tracking',
-              content: [
-                { heading: 'Essential Cookies', text: 'Used for platform functionality, user authentication, and security features.' },
-                { heading: 'Analytics Cookies', text: 'Help us understand how users interact with our platform to improve services.' },
-                { heading: 'Cookie Control', text: 'You can manage cookie preferences through your browser settings, though some features may be limited.' },
-              ]
-            },
-          ].map((section, idx) => (
-            <div key={idx} style={{
-              background: '#fff',
-              borderRadius: '20px',
-              padding: '36px',
-              border: '1px solid #e5e7eb',
-              boxShadow: '0 4px 20px rgba(0,0,0,0.06)',
-              transition: 'all 0.3s ease',
-            }}
-              onMouseEnter={e => {
-                e.currentTarget.style.transform = 'translateY(-4px)';
-                e.currentTarget.style.boxShadow = '0 12px 40px rgba(255,107,26,0.15)';
+            {[
+              {
+                icon: '📋',
+                title: '1. Information We Collect',
+                content: [
+                  { heading: 'Personal Information', text: 'Name, phone number, email address, postal address, and identification documents (Aadhaar, PAN) when you register or consult with our lawyers.' },
+                  { heading: 'Legal Case Information', text: 'Details about your legal matters, case documents, court proceedings, and communication with advocates to provide effective legal representation.' },
+                  { heading: 'Payment Information', text: 'Billing details and transaction records for legal services rendered by our network of lawyers.' },
+                  { heading: 'Technical Data', text: 'IP address, browser type, device information, and usage patterns to improve our platform and ensure security.' },
+                ]
+              },
+              {
+                icon: '⚖️',
+                title: '2. How We Use Your Information',
+                content: [
+                  { heading: 'Legal Services Delivery', text: 'To connect you with qualified lawyers, facilitate consultations, and provide legal representation in courts across India.' },
+                  { heading: 'Case Management', text: 'To manage your legal cases, prepare documents, file petitions, and represent you in Supreme Court, High Courts, District Courts, and Tribunals.' },
+                  { heading: 'Communication', text: 'To send case updates, court hearing dates, legal notices, and important information related to your matters.' },
+                  { heading: 'Service Improvement', text: 'To analyze usage patterns and improve our legal services platform for better client experience.' },
+                ]
+              },
+              {
+                icon: '🛡️',
+                title: '3. Attorney-Client Privilege',
+                content: [
+                  { heading: 'Confidentiality Protection', text: 'All communications between you and our lawyers are protected under Section 126 of the Indian Evidence Act, 1872, ensuring attorney-client privilege.' },
+                  { heading: 'Professional Ethics', text: 'Our lawyers are bound by the Bar Council of India Rules and professional ethics to maintain strict confidentiality of client information.' },
+                  { heading: 'Court Proceedings', text: 'Information shared during legal consultations and case preparation remains confidential unless required to be disclosed in court proceedings.' },
+                ]
+              },
+              {
+                icon: '🔐',
+                title: '4. Data Security Measures',
+                content: [
+                  { heading: 'Encryption', text: 'All sensitive data is encrypted using industry-standard SSL/TLS protocols during transmission and AES-256 encryption at rest.' },
+                  { heading: 'Access Control', text: 'Only authorized lawyers and staff handling your case have access to your information on a need-to-know basis.' },
+                  { heading: 'Secure Storage', text: 'Legal documents and case files are stored in secure, ISO-certified data centers with regular security audits.' },
+                  { heading: 'Regular Monitoring', text: 'Continuous monitoring for unauthorized access attempts and security threats to protect your data.' },
+                ]
+              },
+              {
+                icon: '👥',
+                title: '5. Information Sharing',
+                content: [
+                  { heading: 'With Your Lawyer', text: 'Your information is shared with the assigned advocate(s) handling your case to provide effective legal representation.' },
+                  { heading: 'Court Submissions', text: 'Necessary information is submitted to courts, tribunals, and legal authorities as required for your case proceedings.' },
+                  { heading: 'Legal Compliance', text: 'We may disclose information when required by law, court orders, or government authorities under Indian legal framework.' },
+                  { heading: 'No Third-Party Marketing', text: 'We never sell, rent, or share your personal information with third parties for marketing purposes.' },
+                ]
+              },
+              {
+                icon: '📱',
+                title: '6. Your Rights',
+                content: [
+                  { heading: 'Access & Correction', text: 'You have the right to access, review, and correct your personal information stored in our system.' },
+                  { heading: 'Data Portability', text: 'Request a copy of your case documents and personal data in a structured, commonly used format.' },
+                  { heading: 'Deletion Request', text: 'Request deletion of your data after case closure, subject to legal record-keeping requirements.' },
+                  { heading: 'Opt-Out', text: 'Unsubscribe from promotional communications while continuing to receive essential case-related updates.' },
+                ]
+              },
+              {
+                icon: '⏱️',
+                title: '7. Data Retention',
+                content: [
+                  { heading: 'Active Cases', text: 'Information is retained throughout the duration of your legal case and representation.' },
+                  { heading: 'Closed Cases', text: 'Case files are maintained for 7 years after case closure as per Bar Council guidelines and legal requirements.' },
+                  { heading: 'Financial Records', text: 'Payment and billing information is retained as per Indian tax and accounting regulations.' },
+                ]
+              },
+              {
+                icon: '🍪',
+                title: '8. Cookies & Tracking',
+                content: [
+                  { heading: 'Essential Cookies', text: 'Used for platform functionality, user authentication, and security features.' },
+                  { heading: 'Analytics Cookies', text: 'Help us understand how users interact with our platform to improve services.' },
+                  { heading: 'Cookie Control', text: 'You can manage cookie preferences through your browser settings, though some features may be limited.' },
+                ]
+              },
+            ].map((section, idx) => (
+              <div key={idx} style={{
+                background: '#fff',
+                borderRadius: '20px',
+                padding: '36px',
+                border: '1px solid #e5e7eb',
+                boxShadow: '0 4px 20px rgba(0,0,0,0.06)',
+                transition: 'all 0.3s ease',
               }}
-              onMouseLeave={e => {
-                e.currentTarget.style.transform = 'translateY(0)';
-                e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.06)';
-              }}
-            >
-              <div style={{ display: 'flex', alignItems: 'flex-start', gap: '16px', marginBottom: '20px' }}>
-                <span style={{ fontSize: '2rem', flexShrink: 0 }}>{section.icon}</span>
-                <h3 style={{ fontSize: '1.5rem', fontWeight: '800', color: '#111827', margin: 0, lineHeight: 1.3 }}>
-                  {section.title}
-                </h3>
-              </div>
-              {section.content.map((item, i) => (
-                <div key={i} style={{ marginBottom: '20px', paddingLeft: '0' }}>
-                  <h4 style={{ fontSize: '1rem', fontWeight: '700', color: '#FF6B1A', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                    <span style={{ fontSize: '1.2rem' }}>•</span> {item.heading}
-                  </h4>
-                  <p style={{ fontSize: '0.92rem', color: '#4b5563', lineHeight: 1.8, margin: 0, paddingLeft: '24px' }}>
-                    {item.text}
-                  </p>
+                onMouseEnter={e => {
+                  e.currentTarget.style.transform = 'translateY(-4px)';
+                  e.currentTarget.style.boxShadow = '0 12px 40px rgba(255,107,26,0.15)';
+                }}
+                onMouseLeave={e => {
+                  e.currentTarget.style.transform = 'translateY(0)';
+                  e.currentTarget.style.boxShadow = '0 4px 20px rgba(0,0,0,0.06)';
+                }}
+              >
+                <div style={{ display: 'flex', alignItems: 'flex-start', gap: '16px', marginBottom: '20px' }}>
+                  <span style={{ fontSize: '2rem', flexShrink: 0 }}>{section.icon}</span>
+                  <h3 style={{ fontSize: '1.5rem', fontWeight: '800', color: '#111827', margin: 0, lineHeight: 1.3 }}>
+                    {section.title}
+                  </h3>
                 </div>
-              ))}
-            </div>
-          ))}
+                {section.content.map((item, i) => (
+                  <div key={i} style={{ marginBottom: '20px', paddingLeft: '0' }}>
+                    <h4 style={{ fontSize: '1rem', fontWeight: '700', color: '#FF6B1A', marginBottom: '8px', display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <span style={{ fontSize: '1.2rem' }}>•</span> {item.heading}
+                    </h4>
+                    <p style={{ fontSize: '0.92rem', color: '#4b5563', lineHeight: 1.8, margin: 0, paddingLeft: '24px' }}>
+                      {item.text}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            ))}
           </div>
 
           {/* Legal Compliance Section */}
@@ -236,7 +236,7 @@ export default function Privacy() {
                 'Personal Data Protection Bill (PDPB) compliance ready',
                 'Supreme Court guidelines on data privacy and confidentiality',
               ].map((law, i) => (
-                <div key={i} style={{ 
+                <div key={i} style={{
                   display: 'flex', gap: '12px', alignItems: 'flex-start',
                   background: 'rgba(255,255,255,0.05)',
                   padding: '16px 20px',
@@ -262,14 +262,14 @@ export default function Privacy() {
               📞 Privacy Questions? We're Here to Help
             </h3>
             <p style={{ fontSize: '1rem', color: '#374151', lineHeight: 1.7, marginBottom: '36px', textAlign: 'center' }}>
-              If you have any questions about this Privacy Policy, how we handle your data, or wish to exercise your privacy rights, 
+              If you have any questions about this Privacy Policy, how we handle your data, or wish to exercise your privacy rights,
               please contact our Data Protection Officer:
             </p>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px', marginBottom: '36px' }} className="contact-info-grid">
-              <div style={{ 
-                display: 'flex', 
+              <div style={{
+                display: 'flex',
                 flexDirection: 'column',
-                alignItems: 'center', 
+                alignItems: 'center',
                 gap: '12px',
                 background: '#fff',
                 padding: '24px',
@@ -279,13 +279,13 @@ export default function Privacy() {
                 <span style={{ fontSize: '2.5rem' }}>📧</span>
                 <div style={{ textAlign: 'center' }}>
                   <div style={{ fontWeight: '600', color: '#6b7280', fontSize: '0.85rem', marginBottom: '4px' }}>Email</div>
-                  <div style={{ fontWeight: '700', color: '#111827', fontSize: '1.05rem' }}>privacy@jannyay.in</div>
+                  <div style={{ fontWeight: '700', color: '#111827', fontSize: '1.05rem' }}>jannyay.office@gmail.com</div>
                 </div>
               </div>
-              <div style={{ 
-                display: 'flex', 
+              <div style={{
+                display: 'flex',
                 flexDirection: 'column',
-                alignItems: 'center', 
+                alignItems: 'center',
                 gap: '12px',
                 background: '#fff',
                 padding: '24px',
@@ -294,14 +294,14 @@ export default function Privacy() {
               }}>
                 <span style={{ fontSize: '2.5rem' }}>📞</span>
                 <div style={{ textAlign: 'center' }}>
-                  <div style={{ fontWeight: '600', color: '#6b7280', fontSize: '0.85rem', marginBottom: '4px' }}>Phone (Toll Free)</div>
-                  <div style={{ fontWeight: '700', color: '#111827', fontSize: '1.05rem' }}>1800-000-0000</div>
+                  <div style={{ fontWeight: '600', color: '#6b7280', fontSize: '0.85rem', marginBottom: '4px' }}>Phone </div>
+                  <div style={{ fontWeight: '700', color: '#111827', fontSize: '1.05rem' }}>8400984678</div>
                 </div>
               </div>
-              <div style={{ 
-                display: 'flex', 
+              <div style={{
+                display: 'flex',
                 flexDirection: 'column',
-                alignItems: 'center', 
+                alignItems: 'center',
                 gap: '12px',
                 background: '#fff',
                 padding: '24px',
@@ -359,8 +359,8 @@ export default function Privacy() {
                   Policy Updates
                 </h4>
                 <p style={{ fontSize: '0.9rem', color: '#78350f', lineHeight: 1.6, margin: 0 }}>
-                  We may update this Privacy Policy periodically to reflect changes in our practices or legal requirements. 
-                  We will notify you of significant changes via email or prominent notice on our platform. 
+                  We may update this Privacy Policy periodically to reflect changes in our practices or legal requirements.
+                  We will notify you of significant changes via email or prominent notice on our platform.
                   Continued use of JanNyay services after updates constitutes acceptance of the revised policy.
                 </p>
               </div>
@@ -383,7 +383,7 @@ export default function Privacy() {
             Your Privacy is Protected
           </h2>
           <p style={{ fontSize: '1.05rem', color: 'rgba(255,255,255,0.9)', marginBottom: '32px', lineHeight: 1.7 }}>
-            Trust JanNyay with your legal matters. We safeguard your information with the same dedication 
+            Trust JanNyay with your legal matters. We safeguard your information with the same dedication
             we bring to fighting for your justice in court.
           </p>
           <Link to="/" style={{

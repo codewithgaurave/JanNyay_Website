@@ -70,12 +70,12 @@ export default function Terms() {
       {/* Content Section */}
       <section style={{ background: '#fff', padding: '80px 24px' }}>
         <div style={{ maxWidth: '1100px', margin: '0 auto' }}>
-          
+
           {/* Last Updated */}
-          <div style={{ 
-            background: '#f8fafc', 
-            padding: '16px 24px', 
-            borderRadius: '12px', 
+          <div style={{
+            background: '#f8fafc',
+            padding: '16px 24px',
+            borderRadius: '12px',
             marginBottom: '40px',
             borderLeft: '4px solid #FF6B1A',
           }}>
@@ -160,7 +160,7 @@ export default function Terms() {
             },
             {
               title: '19. Contact Information',
-              content: 'For any questions regarding these Terms and Conditions, please contact us at help@jannyay.in or call our toll-free number 1800-000-0000. Our legal team is available 24/7 to address your concerns and provide clarification on any terms.'
+              content: 'For any questions regarding these Terms and Conditions, please contact us at jannyay.office@gmail.com or call our toll-free number 8400984678. Our legal team is available 24/7 to address your concerns and provide clarification on any terms.'
             },
           ].map((section, index) => (
             <div key={index} style={{ marginBottom: '40px' }}>

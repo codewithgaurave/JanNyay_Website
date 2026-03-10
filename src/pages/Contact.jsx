@@ -76,9 +76,9 @@ export default function Contact() {
               onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-3px)'; }}
               onMouseLeave={e => { e.currentTarget.style.transform = 'none'; }}
             >
-              📞 1800-000-0000
+              📞 8400984678
             </a>
-            <a href="mailto:help@jannyay.in" style={{
+            <a href="mailto:jannyay.office@gmail.com" style={{
               display: 'inline-flex', alignItems: 'center', gap: '8px',
               padding: '14px 28px', borderRadius: '14px', textDecoration: 'none',
               background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.2)',
@@ -213,7 +213,7 @@ export default function Contact() {
               onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.05)'}
               onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
             >
-              📞 Call Now - 1800-000-0000
+              📞 Call Now - 8400984678
             </a>
             <p style={{ color: 'rgba(255,255,255,0.8)', fontSize: '0.85rem', marginTop: '16px' }}>
               Available 24/7 • Response within 2 hours
@@ -285,45 +285,8 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Office Locations */}
-          <div style={{ marginBottom: '60px' }}>
-            <h2 style={{ fontSize: '2rem', fontWeight: '900', color: '#0f172a', marginBottom: '48px', textAlign: 'center', fontFamily: "'Georgia', serif" }}>
-              Our Office Locations
-            </h2>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '24px' }} className="locations-grid">
-              {[
-                { city: 'New Delhi', address: 'Connaught Place, New Delhi - 110001', phone: '+91 11 4567 8900', icon: '🏛️' },
-                { city: 'Mumbai', address: 'Nariman Point, Mumbai - 400021', phone: '+91 22 4567 8900', icon: '🌆' },
-                { city: 'Bangalore', address: 'MG Road, Bangalore - 560001', phone: '+91 80 4567 8900', icon: '🏙️' },
-                { city: 'Chennai', address: 'T Nagar, Chennai - 600017', phone: '+91 44 4567 8900', icon: '🌴' },
-                { city: 'Kolkata', address: 'Park Street, Kolkata - 700016', phone: '+91 33 4567 8900', icon: '🏛️' },
-                { city: 'Hyderabad', address: 'Banjara Hills, Hyderabad - 500034', phone: '+91 40 4567 8900', icon: '🌇' },
-              ].map((location, index) => (
-                <div key={index} style={{
-                  background: '#fff',
-                  padding: '24px',
-                  borderRadius: '16px',
-                  border: '1px solid #e2e8f0',
-                  transition: 'all 0.3s ease',
-                }}
-                  onMouseEnter={e => { e.currentTarget.style.borderColor = '#FF6B1A'; e.currentTarget.style.boxShadow = '0 8px 24px rgba(255,107,26,0.15)'; }}
-                  onMouseLeave={e => { e.currentTarget.style.borderColor = '#e2e8f0'; e.currentTarget.style.boxShadow = 'none'; }}
-                >
-                  <div style={{ fontSize: '2rem', marginBottom: '12px' }}>{location.icon}</div>
-                  <h4 style={{ fontSize: '1.2rem', fontWeight: '800', color: '#0f172a', marginBottom: '12px' }}>{location.city}</h4>
-                  <p style={{ fontSize: '0.9rem', color: '#64748b', marginBottom: '8px', lineHeight: 1.6 }}>
-                    📍 {location.address}
-                  </p>
-                  <a href={`tel:${location.phone}`} style={{ fontSize: '0.9rem', color: '#FF6B1A', fontWeight: '700', textDecoration: 'none' }}>
-                    📞 {location.phone}
-                  </a>
-                </div>
-              ))}
-            </div>
-          </div>
-
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '60px', marginBottom: '60px' }} className="contact-grid">
-            
+
             {/* Contact Info Cards */}
             <div>
               <h2 style={{ fontSize: '2rem', fontWeight: '900', color: '#0f172a', marginBottom: '16px', fontFamily: "'Georgia', serif" }}>
@@ -334,8 +297,8 @@ export default function Contact() {
               </p>
 
               {[
-                { icon: '📞', title: 'Phone', value: '1800-000-0000 (Toll Free)', link: 'tel:+911800000000' },
-                { icon: '📧', title: 'Email', value: 'help@jannyay.in', link: 'mailto:help@jannyay.in' },
+                { icon: '📞', title: 'Phone', value: '8400984678 ', link: 'tel:+911800000000' },
+                { icon: '📧', title: 'Email', value: 'jannyay.office@gmail.com', link: 'mailto:jannyay.office@gmail.com' },
                 { icon: '📍', title: 'Address', value: 'Connaught Place, New Delhi, India - 110001', link: null },
                 { icon: '⏰', title: 'Working Hours', value: 'Mon - Sat: 9:00 AM - 8:00 PM', link: null },
               ].map((item, index) => (

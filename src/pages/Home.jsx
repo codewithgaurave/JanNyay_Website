@@ -391,7 +391,7 @@ export default function Home() {
             </div>
             <h2 style={{
               fontSize: 'clamp(2rem, 4vw, 3.2rem)',
-              fontWeight: '900', 
+              fontWeight: '900',
               color: '#0f172a',
               lineHeight: 1.15,
               marginBottom: '16px',
@@ -401,7 +401,7 @@ export default function Home() {
               Numbers That Speak{' '}
               <span style={{
                 background: 'linear-gradient(135deg, #FF6B1A 0%, #f59e0b 50%, #138808 100%)',
-                WebkitBackgroundClip: 'text', 
+                WebkitBackgroundClip: 'text',
                 WebkitTextFillColor: 'transparent',
                 display: 'inline-block',
               }}>
@@ -567,11 +567,11 @@ export default function Home() {
                 ⚖️ Our Legal Services
               </span>
             </div>
-            <h2 style={{ 
-              fontSize: 'clamp(2rem, 4vw, 3.2rem)', 
-              fontWeight: '900', 
-              color: '#0f172a', 
-              lineHeight: 1.15, 
+            <h2 style={{
+              fontSize: 'clamp(2rem, 4vw, 3.2rem)',
+              fontWeight: '900',
+              color: '#0f172a',
+              lineHeight: 1.15,
               marginBottom: '16px',
               letterSpacing: '-1px',
               fontFamily: "'Georgia', serif",
@@ -1050,10 +1050,10 @@ export default function Home() {
                   🚀 How It Works
                 </span>
               </div>
-              <h3 style={{ 
-                fontWeight: '900', 
-                fontSize: 'clamp(2rem, 4vw, 3.2rem)', 
-                color: '#0f172a', 
+              <h3 style={{
+                fontWeight: '900',
+                fontSize: 'clamp(2rem, 4vw, 3.2rem)',
+                color: '#0f172a',
                 lineHeight: 1.15,
                 letterSpacing: '-1px',
                 fontFamily: "'Georgia', serif",
@@ -1087,21 +1087,21 @@ export default function Home() {
               ].map((s) => (
                 <div key={s.step} className="step-col" style={{
                   position: 'relative', zIndex: 1,
-                  background: '#fff', borderRadius: '20px', 
+                  background: '#fff', borderRadius: '20px',
                   padding: '32px 24px',
                   transition: 'all 0.3s ease',
                   border: '1px solid #f1f5f9',
                   boxShadow: '0 4px 20px rgba(0,0,0,0.06)',
                 }}>
                   {/* Icon Circle */}
-                  <div style={{ 
-                    width: '72px', 
-                    height: '72px', 
+                  <div style={{
+                    width: '72px',
+                    height: '72px',
                     margin: '0 auto 20px',
                     borderRadius: '50%',
                     background: `linear-gradient(135deg, ${s.color}, ${s.color}cc)`,
-                    display: 'flex', 
-                    alignItems: 'center', 
+                    display: 'flex',
+                    alignItems: 'center',
                     justifyContent: 'center',
                     fontSize: '2rem',
                     boxShadow: `0 8px 24px ${s.color}40`,
@@ -1111,36 +1111,36 @@ export default function Home() {
                     {s.icon}
                     {/* Step badge */}
                     <div style={{
-                      position: 'absolute', 
-                      top: '-8px', 
+                      position: 'absolute',
+                      top: '-8px',
                       right: '-8px',
-                      background: '#111827', 
+                      background: '#111827',
                       color: '#fff',
-                      fontSize: '0.65rem', 
+                      fontSize: '0.65rem',
                       fontWeight: '800',
-                      padding: '4px 8px', 
+                      padding: '4px 8px',
                       borderRadius: '8px',
-                      border: '2px solid #fff', 
+                      border: '2px solid #fff',
                       boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
                     }}>
                       {s.step}
                     </div>
                   </div>
 
-                  <h4 style={{ 
-                    fontWeight: '800', 
-                    color: '#111827', 
-                    fontSize: '1.1rem', 
-                    marginBottom: '10px' 
+                  <h4 style={{
+                    fontWeight: '800',
+                    color: '#111827',
+                    fontSize: '1.1rem',
+                    marginBottom: '10px'
                   }}>
                     {s.title}
                   </h4>
-                  <p style={{ 
-                    color: '#64748b', 
-                    fontSize: '0.9rem', 
-                    lineHeight: 1.6, 
-                    maxWidth: '240px', 
-                    margin: '0 auto' 
+                  <p style={{
+                    color: '#64748b',
+                    fontSize: '0.9rem',
+                    lineHeight: 1.6,
+                    maxWidth: '240px',
+                    margin: '0 auto'
                   }}>
                     {s.desc}
                   </p>
@@ -1276,7 +1276,7 @@ export default function Home() {
                 }}
               >
                 <div style={{ height: '4px', background: `linear-gradient(90deg, ${story.color}, ${story.color}88)`, position: 'absolute', top: 0, left: 0, right: 0 }} />
-                
+
                 <div style={{
                   width: '56px',
                   height: '56px',
@@ -1585,7 +1585,7 @@ export default function Home() {
                 onMouseEnter={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.2)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.5)'; e.currentTarget.style.transform = 'translateY(-4px)'; }}
                 onMouseLeave={e => { e.currentTarget.style.background = 'rgba(255,255,255,0.1)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.3)'; e.currentTarget.style.transform = 'translateY(0)'; }}
               >
-                📞 1800-000-0000 <span style={{ opacity: 0.8, fontSize: '0.9rem', fontWeight: '500' }}>(Toll Free)</span>
+                📞 8400984678 <span style={{ opacity: 0.8, fontSize: '0.9rem', fontWeight: '500' }}></span>
               </a>
             </div>
           </div>

@@ -297,17 +297,17 @@ export default function Gallery() {
                   }}>
                     {item.desc}
                   </p>
-                  <div 
+                  <div
                     onClick={() => setSelectedItem(item)}
                     style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '6px',
-                    color: item.color,
-                    fontWeight: '700',
-                    fontSize: '0.85rem',
-                    cursor: 'pointer',
-                  }}>
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '6px',
+                      color: item.color,
+                      fontWeight: '700',
+                      fontSize: '0.85rem',
+                      cursor: 'pointer',
+                    }}>
                     Read Full Case Study
                     <span style={{ fontSize: '1rem' }}>→</span>
                   </div>
@@ -409,7 +409,7 @@ export default function Gallery() {
                 e.currentTarget.style.transform = 'translateY(0)';
               }}
             >
-              📞 Call Now: 1800-000-0000
+              📞 Call Now: 8400984678
             </a>
           </div>
         </div>
@@ -417,7 +417,7 @@ export default function Gallery() {
 
       {/* Modal */}
       {selectedItem && (
-        <div 
+        <div
           onClick={() => setSelectedItem(null)}
           style={{
             position: 'fixed',
@@ -432,8 +432,9 @@ export default function Gallery() {
             zIndex: 9999,
             padding: '20px',
           }}>
-          <div 
+          <div
             onClick={(e) => e.stopPropagation()}
+            className="modal-content"
             style={{
               background: '#fff',
               borderRadius: '24px',
@@ -470,7 +471,7 @@ export default function Gallery() {
             </button>
 
             {/* Modal Image */}
-            <div style={{ height: '400px', overflow: 'hidden', borderRadius: '24px 24px 0 0' }}>
+            <div className="modal-image" style={{ height: '400px', overflow: 'hidden', borderRadius: '24px 24px 0 0' }}>
               <img
                 src={selectedItem.img}
                 alt={selectedItem.title}
@@ -479,7 +480,7 @@ export default function Gallery() {
             </div>
 
             {/* Modal Content */}
-            <div style={{ padding: '40px' }}>
+            <div className="modal-body" style={{ padding: '40px' }}>
               <div style={{
                 display: 'inline-block',
                 padding: '6px 16px',
@@ -494,7 +495,7 @@ export default function Gallery() {
               }}>
                 {categories.find(c => c.id === selectedItem.category)?.name || 'Gallery'}
               </div>
-              
+
               <h2 style={{
                 fontSize: '2rem',
                 fontWeight: '900',
@@ -505,7 +506,7 @@ export default function Gallery() {
               }}>
                 {selectedItem.title}
               </h2>
-              
+
               <p style={{
                 fontSize: '1.1rem',
                 color: '#475569',
@@ -642,6 +643,20 @@ export default function Gallery() {
         @media (max-width: 600px) {
           .category-filter button span:first-child {
             font-size: 1rem !important;
+          }
+        }
+
+        @media (max-width: 768px) {
+          .modal-content {
+            margin: 0 16px !important;
+            border-radius: 16px !important;
+          }
+          .modal-image {
+            height: 250px !important;
+            border-radius: 16px 16px 0 0 !important;
+          }
+          .modal-body {
+            padding: 24px 20px !important;
           }
         }
       `}</style>
